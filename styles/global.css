@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Robotic", sans-serif;
+  --color-bg: hsl(231deg 100% 98%); /*#F8F9FF */
+  --color-bg-highlight-blue: hsl(224deg 57% 21%); /*#172755 */
+  --color-text: hsl(233deg 100% 100%); /* #FFF */
+  --color-subtext: hsl(233deg 26% 62%); /*#8794BA */
+  --color-bg-highlight-red: hsl(333deg 86% 55%); /* #EF2A82 */
+}
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-subtext);
+  font-family: var(--font-family);
+  overflow: hidden;
+  min-width: 286px;
+}
+
+Link {
+  text-decoration: none;
+}
