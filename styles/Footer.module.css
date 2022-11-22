@@ -1,0 +1,30 @@
+.footer {
+  height: 100px;
+  width: 100vw;
+  min-width: 286px;
+  background-color: var(--color-bg-highlight-blue);
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+
+.footer-links {
+  width: clamp(270px, 95%, 1200px);
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.footer-links_container {
+  padding-right: 1rem;
+}
+
+#FB-logo,
+#TW-logo,
+#IG-logo {
+  color: var(--color-subtext);
+  margin-right: 1rem;
+}

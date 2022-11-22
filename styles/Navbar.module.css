@@ -6,6 +6,7 @@
   position: sticky;
   left: 0;
   overflow: visible;
+  z-index: 100;
 }
 
 .navbar-links {
@@ -15,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1;
 }
 
 .navbar-links-logo {
@@ -78,7 +80,6 @@
   display: none;
   cursor: pointer;
   position: relative;
-  z-index: 1000;
 }
 
 .menu-button {
@@ -91,7 +92,7 @@
   align-items: flex-end;
   flex-flow: column;
   text-align: end;
-  background: hsla(224deg 70% 30% /0.9);
+  background: var(--color-bg-highlight-blue);
   margin-top: 0px;
   position: absolute;
   top: 43px;
@@ -99,6 +100,7 @@
   padding-right: 0;
   width: 100vw;
   min-width: 286px;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 870px) {
