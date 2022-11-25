@@ -17,14 +17,30 @@
   outline: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-subtext);
   font-family: var(--font-family);
-  overflow: hidden;
+  overflow-x: hidden;
   min-width: 286px;
+  position: relative;
 }
 
 Link {
   text-decoration: none;
+}
+
+.section-padding {
+  width: clamp(270px, 95%, 1200px);
+  margin: auto;
+  padding: 1rem;
+}
+
+.App {
+  width: 100vw;
+  overflow-x: hidden;
 }

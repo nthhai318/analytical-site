@@ -4,7 +4,7 @@ import Pricing from "./Pricing";
 
 const Page = () => {
   return (
-    <div className="App">
+    <div>
       <Overview />
       <Features />
       <Pricing />

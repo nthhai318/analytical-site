@@ -1,0 +1,184 @@
+.overview_container {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: relative;
+
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: 540px 1fr;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+.overview_bg {
+    position: absolute;
+    z-index: -1;
+    background: var(--color-bg-highlight-blue);
+    width: 200vw;
+    height: 90%;
+    top: -20%;
+    ;
+    left: -50vw;
+    rotate: -6deg;
+    overflow-x: hidden;
+}
+
+.overview_bg2 {
+    position: absolute;
+    z-index: -2;
+    background: var(--color-bg-highlight-red);
+    width: 200vw;
+    height: 90%;
+    top: -18%;
+    ;
+    left: -50vw;
+    rotate: -6deg;
+    overflow-x: hidden;
+}
+
+
+
+.overview-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-right: 5rem;
+    padding: 1rem 1rem;
+}
+
+.overview-content_h1 {
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -.04em;
+    color: var(--color-text);
+}
+
+.overview-content_p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 1.5rem;
+}
+
+.overview-input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-flow: row;
+}
+
+.overview-input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-text);
+    border: 2px solid var(--color-text);
+    padding: 0 1rem;
+    outline: none;
+    color: var(--color-subtext);
+    border-radius: 5px;
+}
+
+.overview-input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-bg-highlight-red);
+    border: 2px solid var(--color-bg-highlight-red);
+    padding: 0 1rem;
+    color: var(--color-text);
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+.overview-content_people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row;
+    margin-top: 2rem;
+}
+
+.overview-content_people_p {
+    margin: 0 0 0 1rem;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: var(--color-subtext);
+    text-align: center;
+}
+
+.overview-image {
+    position: relative;
+    padding: 1rem;
+}
+
+.main-screen_container {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+.chart_container {
+    position: absolute;
+    ;
+    height: 50%;
+    top: 10rem;
+
+}
+
+#main-screen {
+    height: auto;
+    width: 804px;
+    position: relative !important;
+    object-fit: stretch;
+}
+
+#chart {
+    height: auto;
+    width: 400px;
+    position: relative !important;
+    object-fit: contain;
+    left: -3rem;
+}
+
+@media only screen and (width < 870px) {
+    .overview {
+        display: flex;
+        flex-flow: column-reverse;
+        gap: 0rem;
+    }
+
+    .overview-content {
+        margin: 0 0 3rem;
+    }
+
+    .overview_bg {
+        height: 102%;
+    }
+    .overview_bg2 {
+        height: 102%; 
+    }
+
+}
+
+@media only screen and (width < 500px) {
+    .overview-content_h1 {
+        font-size: 3rem;
+        line-height: 0.95;
+    }
+}
